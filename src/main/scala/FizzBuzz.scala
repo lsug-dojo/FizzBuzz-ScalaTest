@@ -1,13 +1,5 @@
 package main.scala
 
-/**
- * Created by IntelliJ IDEA.
- * User: Pawel
- * Date: 18.11.10
- * Time: 19:32
- * To change this template use File | Settings | File Templates.
- */
-
 object FizzBuzzFilter {
   def apply(i : Int) = {
     i match {

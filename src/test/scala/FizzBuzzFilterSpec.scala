@@ -4,14 +4,6 @@ import org.scalatest.matchers.ShouldMatchers
 import main.scala.FizzBuzzFilter
 import org.scalatest.{FeatureSpec, Spec}
 
-/**
- * Created by IntelliJ IDEA.
- * User: Pawel
- * Date: 18.11.10
- * Time: 19:27
- * To change this template use File | Settings | File Templates.
- */
-
 class FizzBuzzFilterSpec extends Spec with ShouldMatchers {
   describe("FizzBuzzFilter") {
     it("should return Fizz if divisible by 3") {
@@ -49,17 +41,6 @@ class FizzBuzzCheck extends Spec {
         n: Int => n % 3 == 0 ==> (FizzBuzzFilter(n)=="Fizz")
       }
 
-                                      //.map(FizzBuzzFilter(_))
-//      val propSmallInteger = Prop.forAll(smallInteger)(FizzBuzzFilt9ner.apply(n) ==> (n != 3))
-//      val propSmallInteger = Prop.forAll(results){(n: Int) =>
-//
-//        var fizzer : String = FizzBuzzFilter(n)
-//        (n % 3 ==0) :| "Fizz" &&
-//        (n % 5 ==0) :| "Buzz" &&
-//        (n % 3 ==0 && n % 5 ==0) :| "FizzBuzz"
-
-       // (fizzer equals n.toString)
-      //}
       propSmallInteger.check
     }
   }
